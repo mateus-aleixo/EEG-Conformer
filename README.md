@@ -28,6 +28,17 @@ Please use consistent train-val-test split when comparing with other methods.
 - [BCI_competition_IV2b](https://www.bbci.de/competition/iv/) - acc 84.63% (hold out)
 - [SEED](https://bcmi.sjtu.edu.cn/home/seed/seed.html) - acc 95.30% (5-fold)
 
+## Quickstart
+
+
+```sh
+pip install -r requirements.txt
+
+# run the full pipeline
+python conformer.py
+
+```
+
 
 ## Citation
 Hope this code can be useful. I would appreciate you citing us in your paper. 😊
