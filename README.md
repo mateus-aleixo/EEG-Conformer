@@ -32,9 +32,13 @@ Please use consistent train-val-test split when comparing with other methods.
 
 
 ```sh
+# Install PyTorch
+conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 -c pytorch
+
+# Install other dependencies
 pip install -r requirements.txt
 
-# run the full pipeline
+# Run the code
 python conformer.py
 
 ```

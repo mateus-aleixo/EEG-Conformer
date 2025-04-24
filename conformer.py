@@ -413,11 +413,11 @@ class ExP():
 def main():
     best = 0
     aver = 0
+    os.makedirs("./results", exist_ok=True)
     result_write = open("./results/sub_result.txt", "w")
 
     for i in range(9):
         starttime = datetime.datetime.now()
-
 
         seed_n = np.random.randint(2021)
         print('seed is ' + str(seed_n))
@@ -426,7 +426,6 @@ def main():
         torch.manual_seed(seed_n)
         torch.cuda.manual_seed(seed_n)
         torch.cuda.manual_seed_all(seed_n)
-
 
         print('Subject %d' % (i+1))
         exp = ExP(i + 1)
@@ -447,7 +446,6 @@ def main():
         else:
             yt = torch.cat((yt, Y_true))
             yp = torch.cat((yp, Y_pred))
-
 
     best = best / 9
     aver = aver / 9
