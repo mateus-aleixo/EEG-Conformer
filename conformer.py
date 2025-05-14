@@ -15,12 +15,11 @@ import time
 import torch
 from torch.backends import cudnn
 
-gpus = [0]
+gpus = list(range(torch.cuda.device_count()))
 os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
 os.environ["CUDA_VISIBLE_DEVICES"] = ",".join(map(str, gpus))
 cudnn.benchmark = False
 cudnn.deterministic = True
-# writer = SummaryWriter('./TensorBoardX/')
 
 
 def main():
