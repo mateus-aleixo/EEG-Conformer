@@ -1,0 +1,5 @@
+- [ ] Usar conjunto de validação (k-fold)?
+- [ ] Adaptar para se poder usar com CUDA, CPU e MPS 
+- [ ] Limpar o código das variáveis que não estão a ser usadas 
+- [ ] Usar Early Stopping 
+- [x] Meter as classes em ficheiros à parte
